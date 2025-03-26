@@ -1,0 +1,19 @@
+<h2>Listado de Usuarios</h2>
+
+<a href="">crear</a>
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Área</th>
+      <th>Dirección IP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{ usuario.name }}</td>
+      <td>{{ usuario.area }}</td>
+      <td>{{ usuario.ip_address }}</td>
+    </tr>
+  </tbody>
+</table>

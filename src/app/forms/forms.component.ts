@@ -19,13 +19,12 @@ export class FormsComponent {
   mensajeError:string = '';
 
   clickValor(){
-    this.nombreValor = 'Editado';
     console.log('enviando',this.nombreValor);
     console.log('enviando',this.areaValor);
     console.log('enviando',this.ip_address);
 
     let datos:any = {
-      nombre: this.nombreValor,
+      name: this.nombreValor,
       area: this.areaValor,
       ip_address: this.ip_address
     };

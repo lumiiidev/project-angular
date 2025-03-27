@@ -5,10 +5,13 @@
         <input class="area" id="area" name="area" [(ngModel)]="areaValor" placeholder="Area" type="text"><br>
         <input class="ip" id="ip_address" name="ip_address" [(ngModel)]="ip_address" placeholder="172.16.0.0" type="text"><br>
     </div>
-    <div class="button-colum">
-        <button class="styled-button" (click)="clickValor()">Crear</button>        
+        <div class="button-colum">
+        <button class="styled-button" (click)="clickValor()">
+            {{(id)?"Guardar":"Crear"}}
+        </button>        
     
         <button class="styled-button" routerLink="/usuarios">Listado</button>
+        <button *ngIf="id" class="styled-button" (click)="eliminarIP()">Eliminar</button>
     </div>   
     
     <div>

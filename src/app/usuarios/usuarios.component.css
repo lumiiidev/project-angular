@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    margin: 20;
+}
+
+/* Form Container */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form Title */
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #4e1894;
+}
+
+
+.nombre {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #126eca;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.area {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #126eca;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+/* Unique styles for the special box */
+.ip {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #126eca;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.button-container {
+    display: flex; /* Ensures Flexbox layout for buttons */
+    justify-content: space-between; /* Centers the buttons */
+    flex-direction: column;
+    gap: 20px; /* Adds space between buttons */
+    margin: 30px; /* Adds space around the button group */
+}
+
+.styled-button {
+    background-color: #007bff; /* Matches the table header color */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default borders */
+    border-radius: 5px; /* Smooth rounded corners */
+    padding: 10px 20px; /* Comfortable button size */
+    cursor: pointer; /* Adds a pointer cursor */
+    font-family: Arial, sans-serif; /* Matches table font */
+    font-size: 16px; /* Matches table text size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease; /* Adds hover effects */
+}
+
+.styled-button:hover {
+    background-color: #0056b3; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Makes the button pop on hover */
+}
+
+.styled-table {
+    width: 80%; /* Adjust table width */
+    margin: 20px auto; /* Center table */
+    border-collapse: collapse; /* Remove gaps between borders */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .styled-table thead tr {
+    background-color: #007bff; /* Blue header */
+    color: white; /* White text */
+  }
+
+  .styled-table th, .styled-table td {
+    border: 1px solid #dddddd; /* Light gray borders */
+    padding: 12px 15px; /* Cell padding */
+  }
+
+  .styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light gray for even rows */
+  }
+
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1; /* Hover effect */
+  }

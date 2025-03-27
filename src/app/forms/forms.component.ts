@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { EnviandoDatosService } from '../servicios/envido-datos.service';
+import { RouterModule} from '@angular/router';
+
 
 @Component({
   selector: 'app-forms',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.css'
 })

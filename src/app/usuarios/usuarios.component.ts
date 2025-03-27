@@ -35,7 +35,6 @@ export class UsuariosComponent implements OnInit {
   }
   
   eliminarIP(id:number){
-
     if(id != 0 || id != null || id != undefined){
       if (confirm('¿Estás seguro de que deseas eliminar este usuario?')){
       this.servicio.eliminar(id).subscribe({

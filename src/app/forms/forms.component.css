@@ -1,4 +1,16 @@
-
+.header {
+    background: linear-gradient(90deg, #1a73e8, #4285f4);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  
 
 .nombre {
     width: 100%;
@@ -11,7 +23,7 @@
 }
 
 .area {
-    width: 100;
+    width: 100%;
     padding: 12px;
     margin: 15px 0;
     border: 1px solid #126eca;
@@ -20,7 +32,6 @@
     transition: border-color 0.2s;
 }
 
-/* Unique styles for the special box */
 .ip {
     width: 100%;
     padding: 12px;
@@ -55,10 +66,33 @@
     transform: scale(1.05); /* Makes the button pop on hover */
 }
 
+.borrar-button {
+    display: flex; /* Ensures Flexbox layout for buttons */
+    justify-content:space-between; /* Centers the buttons */
+    flex-direction: column;
+    gap: 20px; /* Adds space between buttons */
+    margin: 30px; /* Adds space around the button group */
+    background-color: #ff0000; /* Matches the table header color */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default borders */
+    border-radius: 5px; /* Smooth rounded corners */
+    padding: 10px 20px; /* Comfortable button size */
+    cursor: pointer; /* Adds a pointer cursor */
+    font-family: Arial, sans-serif; /* Matches table font */
+    font-size: 16px; /* Matches table text size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease; /* Adds hover effects */
+}
+
+.borrar-button:hover {
+    background-color: #ff0101; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Makes the button pop on hover */
+}
+
 .button-colum{
     display: flex;
     flex-direction: row;
     /* justify-content:center; */
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: stretch;
 }

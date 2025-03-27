@@ -1,4 +1,4 @@
-<h2>Listado de Usuarios</h2>
+<header class="header">Listado de Usuarios</header><br><br>
 <button class="styled-button" routerLink="/usuarios/crear">Crear</button>
 <table class="styled-table" border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -16,7 +16,7 @@
       <td>{{ usuario.area }}</td>
       <td>{{ usuario.ip_address }}</td>
       <td><button class="styled-button" routerLink="/usuarios/editar/{{usuario.id}}">Editar</button></td>
-      <td><button class="styled-button" (click)="eliminarIP(usuario.id)">Eliminar</button></td>
+      <td><button class="borrar-button" (click)="eliminarIP(usuario.id)">Eliminar</button></td>
     </tr>
   </tbody>
 </table>

@@ -53,6 +53,7 @@ export class FormsComponent {
       this.servicio.editar(this.id, datos).subscribe({
         next:(response:any)=>{
           console.log('editar',response);
+          alert('Se guardaron los datos correctamente')
         },
         error:(response:any)=>{
           console.log('error',response);
@@ -63,25 +64,14 @@ export class FormsComponent {
       this.servicio.enviar(datos).subscribe({
         next:(response:any)=>{
           console.log('next',response);
+          alert('Se agregó usuario correctamente')
         },
         error:(response:any)=>{
           console.log('error',response);
           this.mensajeError = 'Ocurrió un error en el servidor';
         }
       });
-    }
-    if(this.id){
-      this.servicio.eliminar(this.id).subscribe({
-        next:(response:any)=>{
-          alert('Usuario Eliminado')
-          console.log('eliminar',response);
-        },
-        error:(response:any)=>{
-          console.log('error',response);
-          this.mensajeError = 'Ocurrió un error en el servidor';
-        }
-      });
-    }   
+    }    
   }
 
   eliminarIP(){

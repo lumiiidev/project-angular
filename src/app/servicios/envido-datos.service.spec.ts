@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EnvidoDatosService } from './envido-datos.service';
+import { EnviandoDatosService } from './envido-datos.service';
 
 describe('EnvidoDatosService', () => {
-  let service: EnvidoDatosService;
+  let service: EnviandoDatosService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(EnvidoDatosService);
+    service = TestBed.inject(EnviandoDatosService);
   });
 
   it('should be created', () => {
